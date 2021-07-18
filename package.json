@@ -1,0 +1,26 @@
+{
+  "name": "usndemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.3",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivertheisholt/USNDemo.git"
+  },
+  "author": "Sivert Heisholt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sivertheisholt/USNDemo/issues"
+  },
+  "homepage": "https://github.com/sivertheisholt/USNDemo#readme"
+}

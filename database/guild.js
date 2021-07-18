@@ -13,7 +13,7 @@ const logger = require("../logging/logger");
  */
 exports.newGuild = async function(guildId, channelBotUpdatesId, channelNewsId,channelMeetingsId,channelAnnouncementsId) {
     logger.info("Creating new guild in database");
-    guild = new Guild({
+    let guild = new Guild({
         guildId: guildId, 
         channelBotUpdatesId: channelBotUpdatesId, 
         channelNewsId, channelNewsId, 
@@ -41,7 +41,7 @@ exports.newGuild = async function(guildId, channelBotUpdatesId, channelNewsId,ch
  * @property {Object} guild - Result from database
  * 
  * @param {String} guildId The id of the guild
- * @returns {DatabaseResult} The result of the operation
+ * @returns {Promise<DatabaseResult>} The result of the operation
  */
 exports.getGuildFromId = async function(guildId) {
     logger.debug(`Getting guild with ID ${guildId} from database`);
