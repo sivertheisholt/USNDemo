@@ -1,3 +1,5 @@
+'use strict';
+
 const mongoose = require('mongoose');
 
 //Schema til quote
@@ -24,4 +26,4 @@ const guildSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('guild', guildSchema); //ES6 Module
+module.exports = mongoose.model('guild', guildSchema);

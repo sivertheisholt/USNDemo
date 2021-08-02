@@ -1,3 +1,5 @@
+'use strict';
+
 const Discord = require('discord.js');
 const logger = require("../logging/logger");
 const guildDatabase = require("../database/guild");
@@ -46,6 +48,7 @@ exports.run = async (arguments) => {
         //Add to db
         dbResult = await guildDatabase.newGuild(arguments.messageObject.guild.id, updates.id, news.id, meetings.id, announcements.id);
     });
+    //Checking DB return
     if(!dbResult) {
         logger.warn(`Can not communicate with database. ${dbResult}`)
         messageSystem.sendChatMessage(arguments.messageObject,"Could not save guild to database. Please start over again and try in a bit.");
@@ -86,6 +89,3 @@ exports.run = async (arguments) => {
 
     message.edit({embed: loadingEmbed});
 }
-
-
-

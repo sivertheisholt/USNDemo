@@ -1,3 +1,4 @@
+'use strict';
 
 exports.bot_interaction = function(bot, prefix) {
     bot.ws.on('INTERACTION_CREATE', async interaction => {

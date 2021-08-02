@@ -1,3 +1,5 @@
+'use strict';
+
 const botReady = require('../events/botOnReady');
 const botMessage = require('../events/botOnMessage');
 const mongoose = require('mongoose');

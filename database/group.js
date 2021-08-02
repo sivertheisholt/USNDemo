@@ -1,6 +1,6 @@
 'use strict';
 
-const Guild = require("../databaseSchemas/guildSchema");
+const Group = require("../databaseSchemas/groupSchema");
 const logger = require("../logging/logger");
 
 

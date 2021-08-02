@@ -1,3 +1,5 @@
+'use strict';
+
 exports.methods = {
     //
     timer: function (ms) {

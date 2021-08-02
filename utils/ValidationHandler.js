@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * En klasse som inneholder status (Boolean) som er statusen på operasjonen og informasjon (*) som kan være hva som helst
  */
